@@ -32,6 +32,7 @@ h1 {
     font-size: 2.5rem;
 }
 
+
 .site-name h2 {
     color: #a7f3d0;
     border-bottom: 4px solid transparent;
@@ -185,4 +186,17 @@ html.dark {
       font-size: 1em;
       justify-content: center;
     }
+
+    .role {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 1rem;
+      }
   }

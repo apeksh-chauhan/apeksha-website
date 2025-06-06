@@ -43,17 +43,27 @@ const skills = ["HTML","CSS","Amazon Web Services","Python","AWS Architecture & 
 const certificates =["AWS Solutions Architech Associate", "AWS SysOps Associate", "AWS Security Specialty"]
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout>
     <style is:global define:vars={{skillColor,fontWeight, textCase}}>
 
         .role {
             font-style: italic;
             margin:0px;
             padding:0px;
-            line-height: 10px;
+            line-height: 1.3; /* chaning from 10px*/
+            font-size: 1.5rem;
+            word-wrap: break-word;
+        }
+
+        h3.role{
+            margin-top: 1rem;
+        }
+        h2 {
+            text-align: center;
         }
     </style>
-        <h2 class="role">{experience[0].role}</h2>
+        <h2>{pageTitle}</h2>
+        <h3 class="role">{experience[0].role}</h3>
         <h3>{experience[0].company}, {experience[0].region} ({experience[0].year})</h3>
         <ul>
             <li>Managed a high-value $95.1M enterprise account, serving as the primary technical advisor and escalation point across cloud strategy, operations, and innovation.</li>
@@ -68,8 +78,7 @@ const certificates =["AWS Solutions Architech Associate", "AWS SysOps Associate"
             <li>Active member of the AWS Storage Technical Field Community; led customer-facing workshops on architecture and optimization for S3, EFS, and AWS Backup.</li>
             <li>Partnered with AWS service teams to influence product roadmaps, implement bug fixes, and drive architectural improvements on behalf of customers.</li>
         </ul>
-    </br>
-        <h2 class="role">{experience[1].role}</h2>
+        <h3 class="role">{experience[1].role}</h3>
         <h3>{experience[1].company}, {experience[1].region} ({experience[1].year})</h3>
         <ul>
             <li>Directly working with business and enterprise customers to troubleshoot service level technical issues. Provide service specific
@@ -80,8 +89,7 @@ const certificates =["AWS Solutions Architech Associate", "AWS SysOps Associate"
             <li>Led a team for onboarding and training New hires on AWS Services in Compute, Systems (LINUX), Storage, and Networking</li>
 
         </ul>
-    </br>
-        <h2 class="role">{experience[2].role}</h2>
+        <h3 class="role">{experience[2].role}</h3>
         <h3>{experience[2].company}, {experience[2].region} ({experience[2].year})</h3>
         <ul>
             <li>Quickly absorbed new/complex technologies like OpenStack, Heat Template Orchestrations, and protocols – DNS, DNS Security
@@ -94,8 +102,7 @@ const certificates =["AWS Solutions Architech Associate", "AWS SysOps Associate"
             <li>Investigated Key Signing Key Rollover across different recursive resolvers and highlighted the key findings in a poster presentation in
                 front of key leadership. </li>
         </ul>
-    </br>
-        <h2 class="role">{experience[3].role}</h2>
+        <h3 class="role">{experience[3].role}</h3>
         <h3>{experience[3].company}, {experience[3].region} ({experience[3].year})</h3>
         
         <ul>
@@ -105,13 +112,12 @@ const certificates =["AWS Solutions Architech Associate", "AWS SysOps Associate"
             and reduce migration time by 33%.</li>
            <li>Reduced defect turnaround time by 20%, by automating testing procedures using Apex tools.</li>
         </ul>
-    </br>   
-        <h2>SKILLS</h2>
+        <h3>SKILLS</h3>
         <ul>
             {skills.map((skill)=><li class = "skill">{skill}</li>)}
         </ul>
 
-        <h2>Certifcations</h2>
+        <h3>Certifcations</h3>
         <ul>
             {certificates.map((cert)=><li class = "cert">{cert}</li>)}
         </ul>
