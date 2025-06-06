@@ -1,0 +1,36 @@
+---
+import Social from "./Social.astro";
+const today = new Date();
+---
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    footer {
+        display: grid;
+        gap: 1rem;
+        margin-top: ;
+        background-color: #1e1e2f;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    
+}
+
+</style>
+</head>
+<footer>
+<div class="social-links">
+    <Social platform="github" username="apeksh-chauhan"/>
+    <Social platform="linkedIn" username="in/apeksha-chauhan/"/>    
+</div>
+<div class="copy">
+    &copy; {today.getFullYear()} Apeksha Chauhan. All rights reserved. 
+</div>
+</footer>
+

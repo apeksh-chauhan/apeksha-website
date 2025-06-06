@@ -1,0 +1,29 @@
+---
+//import Navigation from '../components/Navigation.astro';
+//import Header from '../components/Header.astro';
+//import Footer from '../components/Footer.astro';
+//import '../styles/global.css';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+const allPosts = Object.values(import.meta.glob('./posts/*md',{eager:true}));
+const pageTitle = "Blogs"
+
+---
+
+<style>
+	ul {
+		gap: 2rem;
+		list-style-type: none;
+		padding: 0;
+		font-size: 0;
+	}
+</style>
+
+
+<BaseLayout>
+	<ul>
+		{allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description} date={post.frontmatter.pubDate} />)}
+	</ul>
+</BaseLayout>
+

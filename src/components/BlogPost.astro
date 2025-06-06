@@ -1,0 +1,44 @@
+---
+const {url, title, description, date} = Astro.props;
+
+---
+<style>
+	a  {
+		color: #2a2a3f;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: blue;
+		text-decoration: underline;
+		text-underline-offset: 5px;
+
+	}
+	
+	.description {
+		line-height: 1.5;
+		font-size: medium;
+		color: #3C4142;
+		padding-left: 0;
+	}
+
+	li {
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		border-bottom: solid 2px #B0B0B0;
+	}
+
+	.title {
+		margin-bottom: -10px;
+	}
+	
+</style>
+<div>
+    <li>
+        <a href={url}>
+            <h2 class="title">{title}</h2>
+        </a> 
+        <p class="description">{description}<br>{date}</p>				
+    </li>
+</div>

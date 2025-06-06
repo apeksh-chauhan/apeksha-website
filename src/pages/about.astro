@@ -1,0 +1,119 @@
+---
+//import Header from '../components/Header.astro';
+//import Navigation from '../components/Navigation.astro';
+//import Footer from '../components/Footer.astro';
+//import '../styles/global.css';
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle ="Professional Experience"
+
+const skillColor = "navy";
+const fontWeight="bold";
+const textCase="UpperCase";
+
+// Job Experience 
+const experience = [{
+    role: "Senior Technical Account Manager",
+    company: "Amazon Web Services",
+    region: "Herndon, VA",
+    year:"June 2021 - June 2025",
+},
+{
+    role: "Cloud Support Engineer",
+    company:"Amazon Web Services",
+    region:"Herndon, VA",
+    year:"July 2018 - June 2021"
+},
+{
+    role: "Technology Research Intern",
+    company:"Verisign",
+    region:"Reston, VA",
+    year:"June 2017 - August 2017"
+},
+{
+    role: "Software Engineering Analyst - Salesforce Developer",
+    company:"Accenture Service Pvt Ltd",
+    region:"Gurgaon, India",
+    year:"August 2014 - July 2016"
+}
+]
+//skills
+const skills = ["HTML","CSS","Amazon Web Services","Python","AWS Architecture & strategy","Stakeholder Management","Cloud Cost Optimization","DevOps/ Automation", "Incident & Risk Management", "Account Planning & QBR"]
+
+//Certifications
+const certificates =["AWS Solutions Architech Associate", "AWS SysOps Associate", "AWS Security Specialty"]
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <style is:global define:vars={{skillColor,fontWeight, textCase}}>
+
+        .role {
+            font-style: italic;
+            margin:0px;
+            padding:0px;
+            line-height: 10px;
+        }
+    </style>
+        <h2 class="role">{experience[0].role}</h2>
+        <h3>{experience[0].company}, {experience[0].region} ({experience[0].year})</h3>
+        <ul>
+            <li>Managed a high-value $95.1M enterprise account, serving as the primary technical advisor and escalation point across cloud strategy, operations, and innovation.</li>
+            <li>Spearheaded customer onboarding and adoption of AWS services through proof-of-concepts, infrastructure modernization, guardrail implementation, and service migrations.</li>
+            <li>Delivered strategic cost optimization initiatives resulting in $500K+ annual savings using Savings Plans, Compute Optimizer, Cost Explorer, and anomaly detection.</li>
+            <li>Led executive-level Monthly and Quarterly Business Reviews (MBRs/QBRs) to align technical execution with business outcomes.</li>
+            <li>Improved customer security posture through the AWS Security Improvement Program (SIP), network firewall PoCs, bi-weekly security reviews, and Shield Advanced integration.</li>
+            <li>Facilitated resilience tabletop exercises and conducted deep-dive technical sessions on cloud resilience, security, and cost-efficiency.</li>
+            <li>Directed Black Friday Incident Event Management (AWS CountDown) for a strategic e-commerce customer, ensuring system availability and performance.</li>
+            <li>Managed high-impact, business-critical service incidents including with AWS services, coordinating resolution with internal service teams.</li>
+            <li>Acted as a Bar Raiser, conducting 150+ interviews and mentoring peers in AWS hiring practices and leadership principles.</li>
+            <li>Active member of the AWS Storage Technical Field Community; led customer-facing workshops on architecture and optimization for S3, EFS, and AWS Backup.</li>
+            <li>Partnered with AWS service teams to influence product roadmaps, implement bug fixes, and drive architectural improvements on behalf of customers.</li>
+        </ul>
+    </br>
+        <h2 class="role">{experience[1].role}</h2>
+        <h3>{experience[1].company}, {experience[1].region} ({experience[1].year})</h3>
+        <ul>
+            <li>Directly working with business and enterprise customers to troubleshoot service level technical issues. Provide service specific
+                architectural recommendations for customer use cases</li>
+            <li>Engaged with tier 2 customer escalations for AWS Storage services and collaborated with service teams to drive complex customer issues
+                to resolution.</li>
+            <li>Knowledge Sharing: Writing technical articles to help peers with common customer issues</li>
+            <li>Led a team for onboarding and training New hires on AWS Services in Compute, Systems (LINUX), Storage, and Networking</li>
+
+        </ul>
+    </br>
+        <h2 class="role">{experience[2].role}</h2>
+        <h3>{experience[2].company}, {experience[2].region} ({experience[2].year})</h3>
+        <ul>
+            <li>Quickly absorbed new/complex technologies like OpenStack, Heat Template Orchestrations, and protocols – DNS, DNS Security
+                Extensions, Key Signing Key rollover (RFC 5011).</li>
+            <li>Reduced DNS environment setup time and complexity, improved reusability and defect replication by templatizing the DNS environment
+                setup via Heat Template Orchestration on OpenStack platform. </li>
+            <li>Enhanced and automated DNS Security Extensions (DNSSEC) setup procedure on the DNS infrastructure through Python scripting on
+                Centos (LINUX) Operating System.</li>
+            <li>Automated configuration for nameservers – UNBOUND, BIND, NSD, POWERDNS, and time server – NTP.</li>
+            <li>Investigated Key Signing Key Rollover across different recursive resolvers and highlighted the key findings in a poster presentation in
+                front of key leadership. </li>
+        </ul>
+    </br>
+        <h2 class="role">{experience[3].role}</h2>
+        <h3>{experience[3].company}, {experience[3].region} ({experience[3].year})</h3>
+        
+        <ul>
+           <li>Successfully delivered 3 Service Cloud and 1 Sales Cloud Project using Salesforce configuration and customization tools, dataloader,
+            dashboards and reports.</li>
+           <li>Led the data analysis team of 5 and engineered a data migration procedure for Salesforce platform to achieve a faster end to end workflow
+            and reduce migration time by 33%.</li>
+           <li>Reduced defect turnaround time by 20%, by automating testing procedures using Apex tools.</li>
+        </ul>
+    </br>   
+        <h2>SKILLS</h2>
+        <ul>
+            {skills.map((skill)=><li class = "skill">{skill}</li>)}
+        </ul>
+
+        <h2>Certifcations</h2>
+        <ul>
+            {certificates.map((cert)=><li class = "cert">{cert}</li>)}
+        </ul>
+</BaseLayout>
+

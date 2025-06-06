@@ -1,16 +1,49 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+const pageTitle = "Home"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<style>
+	.into{
+		font-style: italic;
+	}
+</style>
+
+<BaseLayout>
+	<style>
+		.intro{
+			font-style: italic;
+			text-align: center;
+			font-size: large;
+			color: #3C4142;
+		}
+	</style>
+	<p class = "intro"> Thinker. Builder. Problem solver. Lifelong learner.
+		Welcome to my corner of the internet! </p>
+	
+		<h2>A bit about Me</h2>
+
+	<p> 	
+      Hello! I’m a cloud technologist with around nine years of experience in the tech industry - including two years in general IT and seven years specializing 
+	  in cloud computing. My journey so far has largely revolved around working closely with customers to fine-tune their cloud infrastructure - from optimizing performance and 
+	  cost to enhancing security and streamlining operations. I thrive at the intersection of technology and real-world problem solving, always looking for smarter, more efficient ways to build and scale in the cloud.
+	</p>
+
+	<h2> Projects, Posts & Random Thoughts </h2>
+
+	<p> 
+		This site is my digital workspace - part protfolio, part creative lab, part personal journal. I’m a firm believer in open knowledge and continuous learning, and this is my way 
+		of giving back to the tech community. Alongside technical deep-dives and cloud insights, you’ll also find thoughts on personal and professional growth, industry trends, and the occasional 3AM musing that didn’t want to wait until morning. Whether you're here to learn, explore, or just scroll through someone else's brain at work - welcome.
+	
+	</p>
+
+	<h2> Need help finding your way around? </h2>
+	<p> You’ll find all my blogs and projects on the <strong style="font-weight: bold;"> Blog/Project </strong> page. If you're looking for something specific, head over to the <strong style="font-weight: bold;">Archive </strong>page - 
+		there, you can browse by tags to quickly find what interests you. </p>
+
+	<h2> Contact Me ? </h2>
+	<p> Whether you have feedback, a comment, or just want to say hello, feel free to reach out. You can connect with me on LinkedIn or drop me an <a href="mailto:apekshachauhanhood@gmail.com">email</a> - I’ll be glad to chat! </p>
+</BaseLayout>
+
+
