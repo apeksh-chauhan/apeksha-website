@@ -157,7 +157,7 @@ html.dark {
 
 .expanded {
     display: unset;
-}*/
+}
 
 @media screen and (min-width: 636px) {
     .nav-links {
@@ -172,4 +172,4 @@ html.dark {
         display: inline-block;
         padding: 15px 20px;
     }
-}
+}*/
