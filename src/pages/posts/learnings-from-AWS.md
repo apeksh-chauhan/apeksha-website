@@ -25,7 +25,7 @@ To me, ownership means understanding the entire system and operating as if you o
 
 There’s no fixed formula for delivering great results. But one thing that’s worked for me is being able to connect my day-to-day actions to broader objectives—and doing that consistently over time. When you do this, you naturally seek better ways to move the needle. And over time, that habit builds trust with your stakeholders.
 
-**You Don't Always need to be a specialist**
+**You Don't Always Need To Be A Specialist**
 
 I say this at the risk of alienating my specialist friends, but in tech, change is the only constant. Tools evolve, tech stack changes, new services and features get launched, best practices get re-written, we are in the middle of one such shift right now with AI. 
 
@@ -33,7 +33,7 @@ During my time at AWS, I saw mechanisms and tools deprecated, and priorities bei
 
 In a world where the tools might change tomorrow, your ability to learn quickly is more important than being an expert in what’s popular today. 
 
-**Your time is Valuable - Use it Intentionally**
+**Your Time Is Valuable - Use It Intentionally**
 
 Two habits that made me significantly more efficient were:
 
@@ -43,7 +43,7 @@ Two habits that made me significantly more efficient were:
 
 In my early days in support, I had to balance learning new concepts with assisting customers in a timely manner. Time boxing helped me manage this. I’d allocate a fixed window to investigate deeply, and if I didn’t have a path forward by the end of that time, I’d seek guidance. It kept me moving without spinning my wheels.
 
-For task tracking, I kept things simple — a Quip document where I noted the activity, progress, and a few supporting notes. It helped me stay organized, plan better, and most importantly, reflect on where my time was actually going. Over time, it became a powerful tool during one-on-ones, mid-year reviews, and promotion cycles to articulate the impact I was driving.
+For task tracking, I kept things simple — a Quip document where I noted the activity, progress, and a few supporting notes. It helped me stay organized, plan better, and most importantly, reflect on where my time was actually going. Over time, it became a powerful tool during 1:1, mid-year reviews, and promotion cycles to articulate the impact I was driving.
 
 Small habits, big outcomes.
 
@@ -87,8 +87,8 @@ If I don’t, I say so - and take a follow-up action.
 
 Over time, I found this built more trust than pretending to have certainty.
 
-Strong communication isn't about being polished—it's about being honest, clear, and useful. Once I focused on those three, everything else got easier.
+Strong communication isn't about being polished - it's about being honest, clear, and useful. Once I focused on those three, everything else got easier.
 
-As I reflect on nearly seven years at AWS, I’m incredibly grateful for the lessons, challenges, and growth it gave me - both as a professional and as a person. The tools I picked — ownership, adaptability, clarity in communication, and a bias for impact—have shaped how I think, work, and lead. But the journey doesn’t end here. I’m excited to keep learning, building, and contributing in new ways. If any of these reflections resonate with you, I’d love to connect and learn about the principles that shaped your own path.
+As I reflect on nearly seven years at AWS, I’m incredibly grateful for the lessons, challenges, and growth it gave me - both as a professional and as a person. The tools I picked — ownership, adaptability, clarity in communication, and a bias for impact - have shaped how I think, work, and lead. But the journey doesn’t end here. I’m excited to keep learning, building, and contributing in new ways. If any of these reflections resonate with you, I’d love to connect and learn about the principles that shaped your own path.
 
 
